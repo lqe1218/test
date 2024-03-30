@@ -30,7 +30,7 @@
     background-image: url('../../assets/img/easy_step_bg.png');
     background-repeat: no-repeat;
     background-size:100vw 200vh;
-    height:110vh;
+    height:60vh;
     margin-top:4rem;
 }   
 .content{

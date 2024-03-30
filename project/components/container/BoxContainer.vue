@@ -5,11 +5,11 @@
             <slot name="img"></slot>
             
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" :class="oppoposition">
             <slot name="context"></slot>
         </div>
         
-        <div class="button-field">
+        <div class="button-field" :class="oppoposition">
             <slot name="button"></slot>
         </div>
     </div>
@@ -19,16 +19,36 @@
 import button from '../button/button.vue';
 const props = defineProps<{cardTitle:string,position:string}>();
 
+let oppoposition='right';
+if(props.position=='left'){
+    oppoposition='right';
+}else{
+    oppoposition='left';
+}
+
 </script>
 
 <style>
 .box-container .left img{
-    float:inline-start;
+    /* float:inline-start; */
+    float:left;
     margin-top:-2rem;
 }
 .box-container .right img{
     float:inline-end;
     margin-top:-2rem;
+}
+.box-container .left{
+    float:left;
+}
+.box-container .right{
+    float:right;
+}
+.box-container .left.button-field{
+    margin-left:2rem;
+}
+.box-container .right.button-field{
+    margin-right:2rem;
 }
 .img{
     display:inline
@@ -48,4 +68,6 @@ const props = defineProps<{cardTitle:string,position:string}>();
 .box-container p{
    font-size:2rem;
 }
+
+
 </style>

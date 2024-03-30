@@ -4,7 +4,7 @@
       <Header/>
       
       <div class="col-md-12 mid-container d-flex">
-        <div class="col-md-3 left">
+        <div class="col-md-4 left">
           <img class="act-logo" src="assets/img/logomark.png" alt="activity img"/>
         </div>
         <div class="col-md-7 title-container">
@@ -43,12 +43,12 @@
               <li><span class="marker">1</span>
                 <span class="orange-color">US$200 credits</span>
                 <br/>
-                when you open an account & deposit US$200
+                <span>when you open an account & deposit US$200</span>
               </li>
               <li><span class="marker">2</span>
                 <span class="orange-color">US$20 credits</span>
                 <br/>
-                for every lot you trade, up to 20 lots
+                <span>for every lot you trade, up to 20 lots</span>
               </li>
             </ul>
           </template>
@@ -60,7 +60,7 @@
       </div>
 
       <div>
-        <BoxContainer card-title="Free INR$20,000 Gift Cards!" position="right">
+        <BoxContainer card-title="Free INR$20,000 Gift Cards!" position="left">
           <template #img>
             <img src="assets/img/Promo 2B.png" style="height:15rem" alt="image"/>
           </template>
@@ -70,13 +70,13 @@
               <li><span class="marker">3</span>
                 <span class="orange-color">INR$2,000 Flipkart gift card</span>
                 <br/>
-                when you refer someone to enjoy 1
+                <span>when you refer someone to enjoy 1</span>
               </li>
               
               <li><span class="marker">4</span>
                 <span class="orange-color">INR$2,000 Flipkart gift card</span>
                 <br/>
-                when you refer someone to enjoy 1 2 3
+                <span>when you refer someone to enjoy <span class="marker">1</span><span class="marker">2</span><span class="marker">3</span></span>
               </li>
             </ul>
           </template>
@@ -139,7 +139,7 @@
 .top-section{
   background-image:url('assets/img/Trading\ Tango\ header.png');
   background-repeat: no-repeat;
-  background-size:100vw 200vh;
+  background-size:100vw 120vh;
 }
 .reward-text{
   font-size:1.5rem;
