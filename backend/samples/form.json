@@ -1,0 +1,11 @@
+{
+    "firstName":"Michelle",
+    "lastName":"Law",
+    "email":"123@gmail.com",
+    "countryCode":"+60",
+    "phoneNum":"0123456789",
+    "password":"*****",
+    "passwordConf":"*****",
+    "check1":true,
+    "check2":true
+}

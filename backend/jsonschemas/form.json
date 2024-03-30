@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+      "firstName": {
+        "type": "string",
+        "rules":"required"
+      },
+      "lastName": {
+        "type": "string",
+        "rules":"required"
+      },
+      "email": {
+        "type": "string",
+        "format": "email",
+        "rules":"required"
+      },
+      "countryCode": {
+        "type": "string",
+        "rules":"required"
+      },
+      "phoneNum": {
+        "type": "string",
+        "rules":"required"
+      },
+      "password": {
+        "type": "string",
+        "rules":"required"
+      },
+      "passwordConf": {
+        "type": "string",
+        "rules":"required"
+      },
+      "check1": {
+        "type": "boolean"
+      },
+      "check2": {
+        "type": "boolean"
+      }
+    }
+  }
