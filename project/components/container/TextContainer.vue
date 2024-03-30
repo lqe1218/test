@@ -15,7 +15,10 @@ const props = defineProps<{text:string}>();
     background-color:var(--line-arrow-color-transparent);
     height:3rem;
     width:95%;
-    margin-top:-3rem
+    margin-top:-3rem;
+    position:relative;
+    z-index:999;
+    margin-left:1rem;   
 }
 .textbox p{
     text-align:center;
