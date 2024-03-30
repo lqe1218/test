@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-  //   'nuxt-primevue',
+    'nuxt-primevue',
     ['@pinia/nuxt',{
       autoImports: [
         // automatically imports `defineStore`
@@ -14,6 +14,22 @@ export default defineNuxtConfig({
       ],
     }],
   ],
+  primevue: {
+    options: {
+      unstyled: true,
+      ripple: true,
+      inputStyle: 'filled'
+    }, 
+    components: {
+      include: '*',      
+      exclude: ['chart']
+    }, 
+    directives: {
+      include: ['Ripple', 'Tooltip','BadgeDirective']
+    },
+    cssLayerOrder:  'primevue',
+
+  },
   css: [ 
     path.resolve(__dirname,'./assets/style/main.css'),
     'primevue/resources/primevue.min.css', 

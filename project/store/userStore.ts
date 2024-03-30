@@ -14,7 +14,14 @@ export default defineStore({
                 passwordConf:"*****",
                 check1:true,
                 check2:true
-            }]
+            }],
+            currentUser:{
+                firstName:"",
+                lastName:"",
+                email:"",
+                countryCode:"",
+                phoneNum:""
+            }
         }
     },
     actions:{
@@ -40,11 +47,27 @@ export default defineStore({
                 check1,
                 check2
             })
+        },
+
+        setCurrentUser(
+            firstName:string,
+            lastName: string, 
+            email:string, 
+            countryCode: string, 
+            phoneNum:string
+            ){
+            this.currentUser={
+                firstName:firstName,
+                lastName:lastName,
+                email:email,
+                countryCode:countryCode,
+                phoneNum:phoneNum
+            }
         }
     },
     getters:{
         getDataByEmail(state) {
-            return (email: string) => state.data.find(data => data.email === email);
+            return (email: string,password:string) => state.data.find(data => data.email === email && data.password === password );
         }
     }
 })
