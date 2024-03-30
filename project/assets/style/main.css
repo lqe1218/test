@@ -1,0 +1,80 @@
+:root {
+    --text-color: #b9e6f9;
+    --background-color: #0077b5;
+    --line-arrow-color: #f68b1f;
+    --main-font: 'ATRotisSemiSans-ExtraBold';
+    --sub-font: 'ATRotisSemiSans-Light';
+    --line-arrow-color-transparent: rgba(246, 139, 31, 0.9);
+  }
+@font-face {
+    font-family: "ATRotisSemiSans-ExtraBold";
+    src: url("https://db.onlinewebfonts.com/t/2ebd031b8cbe541afc9a2334ab57dce6.eot");
+    src: url("https://db.onlinewebfonts.com/t/2ebd031b8cbe541afc9a2334ab57dce6.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/2ebd031b8cbe541afc9a2334ab57dce6.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/2ebd031b8cbe541afc9a2334ab57dce6.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/2ebd031b8cbe541afc9a2334ab57dce6.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/2ebd031b8cbe541afc9a2334ab57dce6.svg#ATRotisSemiSans-ExtraBold") format("svg");
+}
+
+@font-face {
+    font-family: "ATRotisSemiSans-Light";
+    src: url("https://db.onlinewebfonts.com/t/4303aa8bd6438bbd15bc437f2aadbeb4.eot");
+    src: url("https://db.onlinewebfonts.com/t/4303aa8bd6438bbd15bc437f2aadbeb4.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/4303aa8bd6438bbd15bc437f2aadbeb4.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/4303aa8bd6438bbd15bc437f2aadbeb4.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/4303aa8bd6438bbd15bc437f2aadbeb4.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/4303aa8bd6438bbd15bc437f2aadbeb4.svg#ATRotisSemiSans-Light") format("svg");
+}
+  
+* {
+    color: var(--text-color);
+  }
+
+.main-container{
+    background-color: var(--background-color);
+    
+    width:100vw;
+    height:800vh;
+}
+
+.main-title {
+    font-family: var(--main-font);
+    font-size:3.5rem;
+    line-height: normal;
+}
+  
+.sub-title {
+    font-family: var(--sub-font);
+    font-size:2.8rem;
+    line-height: normal;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.flex-wrap{
+    /* flex-wrap:wrap */
+}
+
+a,.orange-color{
+    color:var(--line-arrow-color)!important
+}
+/* 
+li::marker{
+    color:black;
+    background-color:var(--line-arrow-color);
+    width: 10px; 
+    height: 10px;
+} */
+
+ul{
+    list-style: none;
+}
+ul li .marker{
+    color:black;
+    background-color:var(--line-arrow-color);
+    
+    border-radius:100px;
+    padding:5px;
+}
