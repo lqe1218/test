@@ -3,9 +3,9 @@
 ## frontend
 ```bash
 
-$ cd project
+cd project
 
-$ npm run dev
+npm run dev
 
 ``` 
 it will run on localhost:3000
@@ -13,9 +13,9 @@ it will run on localhost:3000
 ## backend
 ```bash
 
-$ cd project
+cd project
 
-$ npm run start:dev
+npm run start:dev
 
 ``` 
 
