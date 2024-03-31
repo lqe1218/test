@@ -12,7 +12,7 @@
             <i class="pi pi-angle-right"></i>
             </span>
         </div>
-        <Dialog v-model:visible="visibleLogin" >
+        <Dialog class="dialog" v-model:visible="visibleLogin" >
             <label for="email">Email</label><br/>
             <input type="text" v-model="loginData.email" placeholder="Email"/>
             <br/><br/>
