@@ -70,7 +70,7 @@
               <li><span class="marker">3</span>
                 <span class="orange-color">INR$2,000 Flipkart gift card</span>
                 <br/>
-                <span>when you refer someone to enjoy 1</span>
+                <span>when you refer someone to enjoy <span class="marker">1</span></span>
               </li>
               
               <li><span class="marker">4</span>

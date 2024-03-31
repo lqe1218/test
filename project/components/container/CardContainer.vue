@@ -25,7 +25,7 @@ const props = defineProps<{title:any}>();
     margin-block-end: 0em!important;
     color:var(--line-arrow-color)!important;
     display:inline;
-    padding-top: 2rem;
+    padding-top: 1.6rem;
     margin-top: 2rem;
     display: inline-block;
 }
